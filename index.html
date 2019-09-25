@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<style>
+	body{
+		background-color: #f6a3ff;
+		color: white;	
+		font-family: sans-serif;
+	}
+	input{
+		width: 40vw;
+		height: 25px;
+		border-radius: 5px;
+		border: 1px solid white;
+		-webkit-box-shadow: 7px 9px 17px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 7px 9px 17px 0px rgba(0,0,0,0.75);
+		box-shadow: 7px 9px 17px 0px rgba(0,0,0,0.75);
+	}
+	input:placeholder{
+		color: black;
+	}
+	input:focus{
+		border: 1px solid yellow;
+	}
+    ul li{
+        margin-top: 5px;
+    }
+    .bungkhus{
+    	text-align: center; 
+    	background-color: purple;
+    	width: 60vw;
+    	margin: 0px auto;
+    	padding: 15px;      
+    }
+    button{
+    	padding: 10px 5px;
+    	background-color: green;
+    	border: 1px solid green;
+    	color: white;
+    }
+    button:hover{
+    	cursor: pointer;
+    	background-color: black;
+    }
+</style>
+<body>
+    <div class="bungkhus"	>	
+
+    		<h1>Form Pemesanan paket travel</h1>
+		    <form>
+		        <ul style="list-style: none">
+		            <li><label for="nama">Nama: </label></li>
+		            <li><input type="text" id="nama" name="nama" placeholder="Nama Lengkap"></li>
+		            <li><label for="ktp">No. KTP/SIM/KTM: </label></li>
+		            <li><input type="text" name="ktp" id="ktp" placeholder="Nomer Identitas"></li>
+		            <li><label for="nohp">No.HP: </label></li>
+		            <li><input type="text" name="nohp" id="nohp" placeholder="No. HP">  </li>
+		            <li><label for="kalender">Tanggal Keberangkatan: </label></li>
+		            <li><input type="date" name="kalender" id="kalender"></li>
+		            <li><label for="paket">Pilih Paket:</label></li>
+		            <li>
+		                <select name="paket" id="paket">
+		                    <option value="Master">Master</option>
+		                    <option value="Grandmaster">Grandmaster</option>
+		                    <option value="Legend">Legend</option>
+		                </select>
+		            </li>
+		            <li><button type="submit">Submit</button></li>
+		        </ul>
+		    
+		    </form>
+    </div>
+</body>
+</html>
