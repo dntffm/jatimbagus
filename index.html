@@ -5,7 +5,9 @@
 </head>
 <style>
 	body{
-		background-color: #f6a3ff;
+		background-image: url("img/Untitled.png");
+		background-repeat: no-repeat;
+		background-size: cover;
 		color: white;	
 		font-family: sans-serif;
 	}
@@ -32,7 +34,11 @@
     	background-color: purple;
     	width: 60vw;
     	margin: 0px auto;
-    	padding: 15px;      
+    	padding: 15px;  
+    	border-radius: 15px; 
+    	-webkit-box-shadow: 7px 9px 17px 0px rgba(0,0,0,0.75);
+		-moz-box-shadow: 7px 9px 17px 0px rgba(0,0,0,0.75);
+		box-shadow: 7px 9px 17px 0px rgba(0,0,0,0.75);   
     }
     button{
     	padding: 10px 5px;
@@ -44,6 +50,10 @@
     	cursor: pointer;
     	background-color: black;
     }
+
+    select{
+    	padding: 20px;
+    }
 </style>
 <body>
     <div class="bungkhus"	>	
@@ -52,16 +62,16 @@
 		    <form>
 		        <ul style="list-style: none">
 		            <li><label for="nama">Nama: </label></li>
-		            <li><input type="text" id="nama" name="nama" placeholder="Nama Lengkap"></li>
+		            <li><input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required></li>
 		            <li><label for="ktp">No. KTP/SIM/KTM: </label></li>
-		            <li><input type="text" name="ktp" id="ktp" placeholder="Nomer Identitas"></li>
+		            <li><input type="text" name="ktp" id="ktp" placeholder="Nomer Identitas" required></li>
 		            <li><label for="nohp">No.HP: </label></li>
-		            <li><input type="text" name="nohp" id="nohp" placeholder="No. HP">  </li>
+		            <li><input type="text" name="nohp" id="nohp" placeholder="No. HP" required> </li>
 		            <li><label for="kalender">Tanggal Keberangkatan: </label></li>
-		            <li><input type="date" name="kalender" id="kalender"></li>
+		            <li><input type="date" name="kalender" id="kalender" required></li>
 		            <li><label for="paket">Pilih Paket:</label></li>
 		            <li>
-		                <select name="paket" id="paket">
+		                <select name="paket" id="paket" required>
 		                    <option value="Master">Master</option>
 		                    <option value="Grandmaster">Grandmaster</option>
 		                    <option value="Legend">Legend</option>
