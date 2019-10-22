@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600");
+@-ms-viewport {
+  width: device-width; }
+body {
+  -ms-overflow-style: scrollbar;
+}
+
+body,section{
+    margin: 0;
+    padding: 0;   
+}
+body, input, select, textarea {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.65; 
+}
+
+/**menu**/
+#menu{
+    position: fixed;
+    display: inline;
+    background-color: #fff;
+    right: 45px;
+}
+
+/**SIDEBAR**/
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -200px;
+    background-color: rgb(206, 27, 40);
+    overflow-x: hidden;
+    padding-top: 16px;
+  }
+   
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+  }
+   
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  .sidebar a.close{
+      font-weight: bolder;
+      text-align: right;
+  }
+   
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+/**NAVBAR START**/
+.navbar{
+    background-color: rgb(65, 62, 62);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 20px;
+}
+.topbar a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    transition: 0.4s;
+}
+.topbar a:hover{
+    background-color: rgb(2, 2, 2);
+    width: 200px;
+}
+/**NAVBAR END**/
+/**HERO START**/
+.logo{
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    color: rgb(206, 27, 40);
+}
+.hero{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/bromo\ 1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.hero h1{
+    font-size: 4em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.hero .hero-btn{
+    border: 3px solid white;
+    width: 200px;
+    display: block;
+    padding: 1em;
+    margin: 20px auto;
+
+}
+.hero a.hero-btn{
+    text-decoration: none;
+    color: white;
+}
+.hero a:hover{
+    border-color: grey;
+    color: rgb(206, 27, 40);
+    border-radius: 20px;
+    transition: 0.4s;
+    background-color: white;
+    border-color: white;
+    
+}
+/**HERO END**/
+/**Card**/
+.separator,#blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sep-inner h1{
+    color: rgb(206, 27, 40);
+}
+.card-outer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card-outer > div.card{
+    margin: 10px;
+}
+.card{
+    width: 150px;
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+    border-top-left-radius: 10px;
+}
+.blog-card{
+    text-align: center;
+    width: 25vw;
+    height: 250px;
+    margin: 35px;
+    /* -webkit-box-shadow: 0px 13px 15px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 13px 15px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 13px 15px 0px rgba(0,0,0,0.75); */
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.blog-card > img{
+    width: 100%;
+    height: 50%;
+}
+.blog-card:hover{
+    cursor: pointer;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    
+
+}
+.card p{
+    font-weight: bold;
+
+}
+.card:hover{
+    background-color: rgb(214, 91, 91);
+    transition: 0.4s;
+    cursor: pointer;
+}
+.next{
+    margin-bottom: 10px;
+}
+/**DESTINASI START**/
+#destinasi{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("../img/bromo\ 3.jpg");
+    background-size: cover;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    align-items: right;
+    justify-content: right;
+     
+}
+.dest-inner{
+    font-family: Arial;
+    width: 30vw;
+    height: 100vh;
+    color: white;
+    margin: 40px;
+}
+.dest-inner h1{
+    
+    font-size: 35px;
+    font-weight: 100;
+}
+.des    t-inner p{
+    font-weight: 100;
+}
+/**DESTINASI END**/
+
+/**BUTTON**/
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    height: 3.25rem;
+    line-height: 3.25rem;
+    padding: 0 1.75rem;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+ }
+  input[type="submit"].small,
+  input[type="reset"].small,
+  input[type="button"].small,
+  button.small,
+  .button.small {
+    font-size: 0.8rem;
+    height: 2.4375rem;
+    line-height: 2.4375rem;
+    padding: 0 1.25rem; }
+  input[type="submit"].large,
+  input[type="reset"].large,
+  input[type="button"].large,
+  button.large,
+  .button.large {
+    font-size: 1.35rem;
+    height: 4.0625rem;
+    line-height: 4.0625rem;
+    padding: 0 2rem; }
+  input[type="submit"].wide,
+  input[type="reset"].wide,
+  input[type="button"].wide,
+  button.wide,
+  .button.wide {
+    min-width: 13rem; }
+  input[type="submit"].icon:before,
+  input[type="reset"].icon:before,
+  input[type="button"].icon:before,
+  button.icon:before,
+  .button.icon:before {
+    margin-right: 0.5rem; }
+  input[type="submit"].fit,
+  input[type="reset"].fit,
+  input[type="button"].fit,
+  button.fit,
+  .button.fit {
+    width: 100%; }
+  input[type="submit"].disabled, input[type="submit"]:disabled,
+  input[type="reset"].disabled,
+  input[type="reset"]:disabled,
+  input[type="button"].disabled,
+  input[type="button"]:disabled,
+  button.disabled,
+  button:disabled,
+  .button.disabled,
+  .button:disabled {
+    pointer-events: none;
+    opacity: 0.25; }
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button,
+.button {
+  background-color: transparent;
+  box-shadow: inset 0 0 0 1px #555555;
+  color: #555555 !important; }
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover,
+  button:hover,
+  .button:hover {
+    box-shadow: inset 0 0 0 1px #ce1b28;
+    color: #ce1b28 !important; }
+    input[type="submit"]:hover:active,
+    input[type="reset"]:hover:active,
+    input[type="button"]:hover:active,
+    button:hover:active,
+    .button:hover:active {
+      background-color: rgba(206, 27, 40, 0.25); }
+  input[type="submit"].primary,
+  input[type="reset"].primary,
+  input[type="button"].primary,
+  button.primary,
+  .button.primary {
+    box-shadow: none;
+    background-color: #ce1b28;
+    color: #ffffff !important; }
+    input[type="submit"].primary:hover,
+    input[type="reset"].primary:hover,
+    input[type="button"].primary:hover,
+    button.primary:hover,
+    .button.primary:hover {
+      background-color: #e2212f;
+      box-shadow: none; }
+      input[type="submit"].primary:hover:active,
+      input[type="reset"].primary:hover:active,
+      input[type="button"].primary:hover:active,
+      button.primary:hover:active,
+      .button.primary:hover:active {
+        background-color: #b71824; }
+
+        
+        

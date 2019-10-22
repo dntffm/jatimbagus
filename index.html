@@ -1,86 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Document</title>
 </head>
-<style>
-	body{
-		background-image: url("img/Untitled.png");
-		background-repeat: no-repeat;
-		background-size: cover;
-		color: white;	
-		font-family: sans-serif;
-	}
-	input{
-		width: 40vw;
-		height: 25px;
-		border-radius: 5px;
-		border: 1px solid white;
-		-webkit-box-shadow: 7px 9px 17px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: 7px 9px 17px 0px rgba(0,0,0,0.75);
-		box-shadow: 7px 9px 17px 0px rgba(0,0,0,0.75);
-	}
-	input:placeholder{
-		color: black;
-	}
-	input:focus{
-		border: 1px solid yellow;
-	}
-    ul li{
-        margin-top: 5px;
-    }
-    .bungkhus{
-    	text-align: center; 
-    	background-color: purple;
-    	width: 60vw;
-    	margin: 0px auto;
-    	padding: 15px;  
-    	border-radius: 15px; 
-    	-webkit-box-shadow: 7px 9px 17px 0px rgba(0,0,0,0.75);
-		-moz-box-shadow: 7px 9px 17px 0px rgba(0,0,0,0.75);
-		box-shadow: 7px 9px 17px 0px rgba(0,0,0,0.75);   
-    }
-    button{
-    	padding: 10px 5px;
-    	background-color: green;
-    	border: 1px solid green;
-    	color: white;
-    }
-    button:hover{
-    	cursor: pointer;
-    	background-color: black;
-    }
-
-    select{
-    	padding: 20px;
-    }
-</style>
 <body>
-    <div class="bungkhus"	>	
-
-    		<h1>Form Pemesanan paket travel</h1>
-		    <form>
-		        <ul style="list-style: none">
-		            <li><label for="nama">Nama: </label></li>
-		            <li><input type="text" id="nama" name="nama" placeholder="Nama Lengkap" required></li>
-		            <li><label for="ktp">No. KTP/SIM/KTM: </label></li>
-		            <li><input type="text" name="ktp" id="ktp" placeholder="Nomer Identitas" required></li>
-		            <li><label for="nohp">No.HP: </label></li>
-		            <li><input type="text" name="nohp" id="nohp" placeholder="No. HP" required> </li>
-		            <li><label for="kalender">Tanggal Keberangkatan: </label></li>
-		            <li><input type="date" name="kalender" id="kalender" required></li>
-		            <li><label for="paket">Pilih Paket:</label></li>
-		            <li>
-		                <select name="paket" id="paket" required>
-		                    <option value="Master">Master</option>
-		                    <option value="Grandmaster">Grandmaster</option>
-		                    <option value="Legend">Legend</option>
-		                </select>
-		            </li>
-		            <li><button type="submit">Submit</button></li>
-		        </ul>
-		    
-		    </form>
-    </div>
+	<!-- <section class="navbar">
+		<div class="topbar">
+			<a href="#">Home</a>
+			<a href="#destinasi">Destinasi</a>
+			<a href="#blog">Blog</a>
+			<a href="#paket">Paket Wisata</a>
+			<a href="login.html">Login</a>
+		</div>
+	</section> -->
+	
+	<button id="menu" class="small">MENU</button>
+	
+	<div class="sidebar">
+			<a class="close">X</a>
+			<a href="#">Home</a>
+			<a href="#sep">Destinasi</a>
+			<a href="#blog">Blog</a>
+			<a href="#paket">Paket Wisata</a>
+			<a href="login.html">Login</a>
+	</div>
+	<section class="hero">
+		<div class="logo">
+			Logonya<br>
+			JatimBagus
+		</div>
+		<div class="hero-inner">
+			<h1>The Beauty of East Java</h1>
+			<h2>Jelajahi indahnya Jawa Timur</h2>
+			<a class="hero-btn" href="">Mulai</a>
+		</div>
+	</section>
+	<div class="separator" id="sep">
+		<div class="sep-inner">
+			<h1>Destinasi Unggulan</h1>
+		</div>
+		<div class="card-outer">
+			<div class="card">
+				<p>Gunung Bromo</p>
+			</div>
+			<div class="card">
+				<p>Pantai Papuma</p>
+			</div>
+			<div class="card">
+				<p>Pantai Papuma</p>
+			</div>
+			<div class="card">
+				<p>Pantai Papuma</p>
+			</div>
+			<div class="card">
+				<p>Pantai Papuma</p>
+			</div>
+		</div>
+		<div class="next">
+			<a href="" class="button small">See More</a>
+		</div>
+	</div>
+	<section id="destinasi">
+		<div class="dest-inner">
+			<h1>GUNUNG BROMO</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+	</section>
+	<section id="blog">
+		<div class="sep-inner"> 
+			<h1>Blog</h1>
+		</div>
+		<div class="card-outer">
+			<div class="blog-card">
+				<img src="img/pantai 3.jpg" alt="">
+				<h3>Judul Blog</h3>
+				<p>Deskripsi Blog</p>
+			</div>
+			<div class="blog-card">
+				<img src="img/pantai 3.jpg" alt="">
+				<h3>Judul Blog</h3>
+				<p>Deskripsi Blog</p>
+			</div>
+			<div class="blog-card">
+				<img src="img/pantai 3.jpg" alt="">
+				<h3>Judul Blog</h3>
+				<p>Deskripsi Blog</p>
+			</div>
+			<div class="blog-card">
+				<img src="img/pantai 3.jpg" alt="">
+				<h3>Judul Blog</h3>
+				<p>Deskripsi Blog</p>
+			</div>
+			<div class="blog-card">
+				<img src="img/pantai 3.jpg" alt="">
+				<h3>Judul Blog</h3>
+				<p>Deskripsi Blog</p>
+			</div>
+			<div class="blog-card">
+				<img src="img/pantai 3.jpg" alt="">
+				<h3>Judul Blog</h3>
+				<p>Deskripsi Blog</p>
+			</div>
+		</div>
+	</section>
+	<script src="js/script.js"></script>
 </body>
 </html>
