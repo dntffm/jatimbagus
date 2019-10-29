@@ -3,17 +3,18 @@
   width: device-width; }
 body {
   -ms-overflow-style: scrollbar;
+
 }
 
 body,section{
     margin: 0;
-    padding: 0;   
+    padding: 0;
 }
 body, input, select, textarea {
   font-family: "Raleway", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 1.65; 
+  line-height: 1.65;
 }
 
 /**menu**/
@@ -36,7 +37,7 @@ body, input, select, textarea {
     overflow-x: hidden;
     padding-top: 16px;
   }
-   
+
   .sidebar a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -44,7 +45,7 @@ body, input, select, textarea {
     color: black;
     display: block;
   }
-   
+
   .sidebar a:hover {
     color: #f1f1f1;
   }
@@ -52,7 +53,7 @@ body, input, select, textarea {
       font-weight: bolder;
       text-align: right;
   }
-   
+
   @media screen and (max-height: 450px) {
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
@@ -78,11 +79,14 @@ body, input, select, textarea {
 /**NAVBAR END**/
 /**HERO START**/
 .logo{
-    font-weight: bold;
-    position: absolute;
-    top: 10px;
-    left: 30px;
-    color: rgb(206, 27, 40);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+.logo img{
+  width: 110px;
+  height: 109px;
 }
 .hero{
     width: 100vw;
@@ -125,7 +129,7 @@ body, input, select, textarea {
     transition: 0.4s;
     background-color: white;
     border-color: white;
-    
+
 }
 /**HERO END**/
 /**Card**/
@@ -173,7 +177,7 @@ body, input, select, textarea {
 .card img{
     width: 100%;
     height: 100%;
-    
+
 
 }
 .card p{
@@ -199,7 +203,7 @@ body, input, select, textarea {
     display: flex;
     align-items: right;
     justify-content: right;
-     
+
 }
 .dest-inner{
     font-family: Arial;
@@ -209,15 +213,47 @@ body, input, select, textarea {
     margin: 40px;
 }
 .dest-inner h1{
-    
+
     font-size: 35px;
     font-weight: 100;
 }
-.des    t-inner p{
+.dest-inner p{
     font-weight: 100;
 }
 /**DESTINASI END**/
+/** PAKET WISATA **/
+#paket{
+  height: 100vh;
+  width: 100vw;
+  background-color: #b9c7ce;
 
+}
+.left-section{
+  width: 40%;
+  height: 100%;
+  background-color: rgb(206, 27, 40);
+  color: white;
+  float: left;
+}
+.left-section h1{
+  font-size: 38px;
+  margin: 40px;
+}
+.paket-card{
+  background-color: white;
+  margin: 50px;
+}
+/**PRA**/
+#praFooter{
+  height: 40vh;
+  width: 100vw;
+}
+/**FOOTER**/
+footer{
+  background-color: #333;
+  color: white;
+  padding: 30px;
+}
 /**BUTTON**/
 input[type="submit"],
 input[type="reset"],
@@ -334,6 +370,3 @@ button,
       button.primary:hover:active,
       .button.primary:hover:active {
         background-color: #b71824; }
-
-        
-        

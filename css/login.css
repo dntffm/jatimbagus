@@ -1,11 +1,15 @@
 body{
-    background-color: rgb(241, 241, 241);
+    
+    background-attachment: : cover;
+    background-size: 100%;
 }
 h1{
     text-align: center;
     text-shadow: 3px 3px 7px rgba(150, 150, 150, 1);
+    color: white;
 }
 .login-area{
+    background-image: url(img/bromo.jpg);
     background-color: #fff;
     padding: 20px;
     width: 25vw;
